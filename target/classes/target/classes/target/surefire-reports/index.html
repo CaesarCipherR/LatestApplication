@@ -102,12 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="IntegrationTest.HomePage" hash-for-method="basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User)">basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="IntegrationTest.HomePage" hash-for-method="basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)">basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="IntegrationTest.HomePage" hash-for-method="basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)">basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="IntegrationTest.HomePage" hash-for-method="basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User)">basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,14 +135,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">IntegrationTest.validateNavigationBar</span>
+              <span class="class-name">IntegrationTest.HomePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateAppNavigationBar">
-                  </a> <!-- validateAppNavigationBar -->
-                  <span class="method-name">validateAppNavigationBar</span>
+                  <a name="basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)">
+                  </a> <!-- basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User) -->
+                  <span class="method-name">basePageNavigation</span>
+                  <span class="parameters">(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User)">
+                  </a> <!-- basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User) -->
+                  <span class="method-name">basePageNavigation</span>
+                  <span class="parameters">(restrictiveuser@facebook.com, 678910, Restrictive User)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,23 +174,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">IntegrationTest.HomePage</span>
+              <span class="class-name">IntegrationTest.validateNavigationBar</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User)">
-                  </a> <!-- basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(restrictiveuser@facebook.com, 678910, Restrictive User)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)">
-                  </a> <!-- basePageNavigation(nonerestrictiveuser@facebook.com, 123456, None Restrictive User) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(nonerestrictiveuser@facebook.com, 123456, None Restrictive User)</span>
+                  <a name="validateAppNavigationBar">
+                  </a> <!-- validateAppNavigationBar -->
+                  <span class="method-name">validateAppNavigationBar</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,6 +196,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;IntegrationTest.listeners&quot;/&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Validating User Login&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;IntegrationTest.HomePage&quot;/&gt;
@@ -266,24 +270,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'basePageNavigation')
 data.setCell(0, 2, 'IntegrationTest.HomePage')
-data.setCell(0, 3, 74376);
+data.setCell(0, 3, 47269);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'basePageNavigation')
 data.setCell(1, 2, 'IntegrationTest.HomePage')
-data.setCell(1, 3, 41548);
+data.setCell(1, 3, 40181);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateAppNavigationBar')
-data.setCell(2, 2, 'IntegrationTest.validateNavigationBar')
-data.setCell(2, 3, 5079);
+data.setCell(2, 1, 'validateAppTitle')
+data.setCell(2, 2, 'IntegrationTest.validateTitle')
+data.setCell(2, 3, 3189);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateAppTitle')
-data.setCell(3, 2, 'IntegrationTest.validateTitle')
-data.setCell(3, 3, 359);
+data.setCell(3, 1, 'validateAppNavigationBar')
+data.setCell(3, 2, 'IntegrationTest.validateNavigationBar')
+data.setCell(3, 3, 2261);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -316,41 +320,41 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">basePageNavigation(restrictiveuser@facebook.com, 678910, Restrictive User)</span>
-                <span class="method-start">74379 ms</span>
+                <span class="method-start">47272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">115933 ms</span>
+                <span class="method-start">87458 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">IntegrationTest.validateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">117167 ms</span>
+                <span class="method-start">92533 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">validateAppTitle</span>
-                <span class="method-start">139873 ms</span>
+                <span class="method-start">112947 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">140232 ms</span>
+                <span class="method-start">116137 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">IntegrationTest.validateNavigationBar</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">143021 ms</span>
+                <span class="method-start">119468 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">validateAppNavigationBar</span>
-                <span class="method-start">162952 ms</span>
+                <span class="method-start">139988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">168032 ms</span>
+                <span class="method-start">142249 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
