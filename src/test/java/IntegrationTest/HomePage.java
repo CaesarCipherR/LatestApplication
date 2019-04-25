@@ -28,7 +28,8 @@ public class HomePage extends Base {
 		l.getLogin().click();
 		System.out.println("Git Commit");
 		System.out.println("Git Pull");
-		
+		System.out.println("American guy commit");
+		System.out.println("This is second guy commit");
 	}
 	
 	@AfterTest
