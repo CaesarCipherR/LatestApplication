@@ -1,0 +1,6 @@
+14:01:26.063 [main] INFO  resources.Base - Driver is initialized
+14:01:38.346 [main] INFO  resources.Base - Navigated to the home page
+14:01:41.537 [main] INFO  resources.Base - Successfully validated title
+14:01:53.442 [main] INFO  resources.Base - Driver is initialized
+14:02:05.387 [main] INFO  resources.Base - Navigated to the home page
+14:02:07.649 [main] INFO  resources.Base - Successfully validated navigation bar

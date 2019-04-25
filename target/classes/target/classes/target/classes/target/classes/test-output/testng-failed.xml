@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="IntegrationTest.listeners"/>
+  </listeners>
+  <test name="Validating User Login">
+    <classes>
+      <class name="IntegrationTest.HomePage"/>
+    </classes>
+  </test> <!-- Validating User Login -->
+  <test name="App Test">
+    <classes>
+      <class name="IntegrationTest.AppTest"/>
+    </classes>
+  </test> <!-- App Test -->
+  <test name="Validate Title">
+    <classes>
+      <class name="IntegrationTest.validateTitle"/>
+    </classes>
+  </test> <!-- Validate Title -->
+  <test name="Validate Navigation Bar">
+    <classes>
+      <class name="IntegrationTest.validateNavigationBar"/>
+    </classes>
+  </test> <!-- Validate Navigation Bar -->
+  <test name="Validate Title(failed)">
+    <classes>
+      <class name="IntegrationTest.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTest.validateNavigationBar -->
+      <class name="IntegrationTest.validateTitle">
+        <methods>
+          <include name="validateAppTitle"/>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- IntegrationTest.validateTitle -->
+      <class name="IntegrationTest.HomePage">
+        <methods>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- IntegrationTest.HomePage -->
+    </classes>
+  </test> <!-- Validate Title(failed) -->
+</suite> <!-- Failed suite [Suite] -->

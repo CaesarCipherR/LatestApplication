@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="144996" started-at="2019-04-25T17:59:45Z" finished-at="2019-04-25T18:02:10Z">
+    <groups>
+    </groups>
+    <test name="Validating User Login" duration-ms="92292" started-at="2019-04-25T17:59:45Z" finished-at="2019-04-25T18:01:17Z">
+      <class name="IntegrationTest.HomePage">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:IntegrationTest.HomePage@6c80d78a]" name="basePageNavigation" duration-ms="47269" started-at="2019-04-25T17:59:45Z" data-provider="getData" finished-at="2019-04-25T18:00:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonerestrictiveuser@facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[None Restrictive User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:IntegrationTest.HomePage@6c80d78a]" name="basePageNavigation" duration-ms="40181" started-at="2019-04-25T18:00:32Z" data-provider="getData" finished-at="2019-04-25T18:01:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restrictiveuser@facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[678910]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restrictive User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.HomePage@6c80d78a]" name="teardown" is-config="true" duration-ms="4639" started-at="2019-04-25T18:01:12Z" finished-at="2019-04-25T18:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTest.HomePage -->
+    </test> <!-- Validating User Login -->
+    <test name="App Test" duration-ms="0" started-at="2019-04-25T18:01:17Z" finished-at="2019-04-25T18:01:17Z">
+    </test> <!-- App Test -->
+    <test name="Validate Title" duration-ms="26768" started-at="2019-04-25T18:01:17Z" finished-at="2019-04-25T18:01:44Z">
+      <class name="IntegrationTest.validateTitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:IntegrationTest.validateTitle@1b11171f]" name="initialize" is-config="true" duration-ms="20413" started-at="2019-04-25T18:01:17Z" finished-at="2019-04-25T18:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:IntegrationTest.validateTitle@1b11171f]" name="validateAppTitle" duration-ms="3189" started-at="2019-04-25T18:01:38Z" finished-at="2019-04-25T18:01:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.validateTitle@1b11171f]" name="teardown" is-config="true" duration-ms="3164" started-at="2019-04-25T18:01:41Z" finished-at="2019-04-25T18:01:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTest.validateTitle -->
+    </test> <!-- Validate Title -->
+    <test name="Validate Navigation Bar" duration-ms="25333" started-at="2019-04-25T18:01:44Z" finished-at="2019-04-25T18:02:10Z">
+      <class name="IntegrationTest.validateNavigationBar">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:IntegrationTest.validateNavigationBar@428640fa]" name="initialize" is-config="true" duration-ms="20519" started-at="2019-04-25T18:01:44Z" finished-at="2019-04-25T18:02:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateAppNavigationBar()[pri:0, instance:IntegrationTest.validateNavigationBar@428640fa]" name="validateAppNavigationBar" duration-ms="2261" started-at="2019-04-25T18:02:05Z" finished-at="2019-04-25T18:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppNavigationBar -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.validateNavigationBar@428640fa]" name="teardown" is-config="true" duration-ms="2552" started-at="2019-04-25T18:02:07Z" finished-at="2019-04-25T18:02:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTest.validateNavigationBar -->
+    </test> <!-- Validate Navigation Bar -->
+  </suite> <!-- Suite -->
+</testng-results>
