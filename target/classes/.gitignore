@@ -1,1 +1,3 @@
-/target/
+/IntegrationTest/
+/pageObjects/
+/resources/

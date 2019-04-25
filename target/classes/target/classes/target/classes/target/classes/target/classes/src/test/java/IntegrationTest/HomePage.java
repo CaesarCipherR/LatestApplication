@@ -26,8 +26,6 @@ public class HomePage extends Base {
 		log.info(text);
 		LoginPage l = new LoginPage(driver);
 		l.getLogin().click();
-		System.out.println("Git Commit");
-		System.out.println("Git Pull");
 		
 	}
 	
