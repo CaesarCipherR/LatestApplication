@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="129053" started-at="2019-04-25T17:14:58Z" finished-at="2019-04-25T17:17:07Z">
+  <suite name="Suite" duration-ms="161722" started-at="2019-04-25T17:55:39Z" finished-at="2019-04-25T17:58:20Z">
     <groups>
     </groups>
-    <test name="Validating User Login" duration-ms="87544" started-at="2019-04-25T17:14:58Z" finished-at="2019-04-25T17:16:25Z">
+    <test name="Validating User Login" duration-ms="115099" started-at="2019-04-25T17:55:39Z" finished-at="2019-04-25T17:57:34Z">
       <class name="IntegrationTest.HomePage">
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:IntegrationTest.HomePage@5ae50ce6]" name="basePageNavigation" duration-ms="48476" started-at="2019-04-25T13:14:58Z" data-provider="getData" finished-at="2019-04-25T13:15:47Z">
+        <test-method status="FAIL" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:IntegrationTest.HomePage@e056f20]" name="basePageNavigation" duration-ms="39564" started-at="2019-04-25T13:55:39Z" data-provider="getData" finished-at="2019-04-25T13:56:18Z">
           <params>
             <param index="0">
               <value>
@@ -25,54 +25,49 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:IntegrationTest.HomePage@5ae50ce6]" name="basePageNavigation" duration-ms="35554" started-at="2019-04-25T13:15:47Z" data-provider="getData" finished-at="2019-04-25T13:16:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restrictiveuser@facebook.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[678910]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restrictive User]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.HomePage@5ae50ce6]" name="teardown" is-config="true" duration-ms="2978" started-at="2019-04-25T13:16:22Z" finished-at="2019-04-25T13:16:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- IntegrationTest.HomePage -->
-    </test> <!-- Validating User Login -->
-    <test name="App Test" duration-ms="2" started-at="2019-04-25T17:16:25Z" finished-at="2019-04-25T17:16:25Z">
-    </test> <!-- App Test -->
-    <test name="Validate Title" duration-ms="23015" started-at="2019-04-25T17:16:25Z" finished-at="2019-04-25T17:16:48Z">
-      <class name="IntegrationTest.validateTitle">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:IntegrationTest.validateTitle@6404f418]" name="initialize" is-config="true" duration-ms="17603" started-at="2019-04-25T13:16:25Z" finished-at="2019-04-25T13:16:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="validateAppTitle()[pri:0, instance:IntegrationTest.validateTitle@6404f418]" name="validateAppTitle" duration-ms="383" started-at="2019-04-25T13:16:43Z" finished-at="2019-04-25T13:16:43Z">
-          <exception class="junit.framework.ComparisonFailure">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected:<f...> but was:<F...>]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"email"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3OR8M0T', ip: '192.168.5.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Mariana\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54761}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true, webdriver.remote.sessionid: c014b0774445e1a97862de144b0...}
+Session ID: c014b0774445e1a97862de144b02f5ab
+*** Element info: {Using=id, value=email}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.ComparisonFailure: expected:<f...> but was:<F...>
-	at junit.framework.Assert.assertEquals(Assert.java:81)
-	at junit.framework.Assert.assertEquals(Assert.java:87)
-	at IntegrationTest.validateTitle.validateAppTitle(validateTitle.java:30)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"email"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3OR8M0T', ip: '192.168.5.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\Mariana\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54761}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true, webdriver.remote.sessionid: c014b0774445e1a97862de144b0...}
+Session ID: c014b0774445e1a97862de144b02f5ab
+*** Element info: {Using=id, value=email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.LandingPage.getEmails(LandingPage.java:21)
+	at IntegrationTest.HomePage.basePageNavigation(HomePage.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -99,27 +94,66 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 ]]>
             </full-stacktrace>
-          </exception> <!-- junit.framework.ComparisonFailure -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:IntegrationTest.HomePage@e056f20]" name="basePageNavigation" duration-ms="71503" started-at="2019-04-25T13:56:19Z" data-provider="getData" finished-at="2019-04-25T13:57:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restrictiveuser@facebook.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[678910]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restrictive User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.HomePage@e056f20]" name="teardown" is-config="true" duration-ms="2892" started-at="2019-04-25T13:57:31Z" finished-at="2019-04-25T13:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- IntegrationTest.HomePage -->
+    </test> <!-- Validating User Login -->
+    <test name="App Test" duration-ms="2" started-at="2019-04-25T17:57:34Z" finished-at="2019-04-25T17:57:34Z">
+    </test> <!-- App Test -->
+    <test name="Validate Title" duration-ms="24694" started-at="2019-04-25T17:57:34Z" finished-at="2019-04-25T17:57:59Z">
+      <class name="IntegrationTest.validateTitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:IntegrationTest.validateTitle@201a4587]" name="initialize" is-config="true" duration-ms="21387" started-at="2019-04-25T13:57:34Z" finished-at="2019-04-25T13:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:IntegrationTest.validateTitle@201a4587]" name="validateAppTitle" duration-ms="773" started-at="2019-04-25T13:57:55Z" finished-at="2019-04-25T13:57:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAppTitle -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.validateTitle@6404f418]" name="teardown" is-config="true" duration-ms="2460" started-at="2019-04-25T13:16:46Z" finished-at="2019-04-25T13:16:48Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.validateTitle@201a4587]" name="teardown" is-config="true" duration-ms="2523" started-at="2019-04-25T13:57:56Z" finished-at="2019-04-25T13:57:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- IntegrationTest.validateTitle -->
     </test> <!-- Validate Title -->
-    <test name="Validate Navigation Bar" duration-ms="18335" started-at="2019-04-25T17:16:48Z" finished-at="2019-04-25T17:17:07Z">
+    <test name="Validate Navigation Bar" duration-ms="21626" started-at="2019-04-25T17:57:59Z" finished-at="2019-04-25T17:58:20Z">
       <class name="IntegrationTest.validateNavigationBar">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:IntegrationTest.validateNavigationBar@4dbb42b7]" name="initialize" is-config="true" duration-ms="14361" started-at="2019-04-25T13:16:48Z" finished-at="2019-04-25T13:17:03Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:IntegrationTest.validateNavigationBar@1b11171f]" name="initialize" is-config="true" duration-ms="16418" started-at="2019-04-25T13:57:59Z" finished-at="2019-04-25T13:58:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateAppNavigationBar()[pri:0, instance:IntegrationTest.validateNavigationBar@4dbb42b7]" name="validateAppNavigationBar" duration-ms="1219" started-at="2019-04-25T13:17:03Z" finished-at="2019-04-25T13:17:04Z">
+        <test-method status="PASS" signature="validateAppNavigationBar()[pri:0, instance:IntegrationTest.validateNavigationBar@1b11171f]" name="validateAppNavigationBar" duration-ms="1873" started-at="2019-04-25T13:58:15Z" finished-at="2019-04-25T13:58:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAppNavigationBar -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.validateNavigationBar@4dbb42b7]" name="teardown" is-config="true" duration-ms="2748" started-at="2019-04-25T13:17:04Z" finished-at="2019-04-25T13:17:07Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:IntegrationTest.validateNavigationBar@1b11171f]" name="teardown" is-config="true" duration-ms="3326" started-at="2019-04-25T13:58:17Z" finished-at="2019-04-25T13:58:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
