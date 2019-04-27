@@ -30,6 +30,8 @@ public class HomePage extends Base {
 		System.out.println("Git Pull");
 		System.out.println("American guy commit");
 		System.out.println("This is second guy commit");
+		System.out.println("Adding few apps");
+		System.out.println("Adding another test");
 	}
 	
 	@AfterTest
