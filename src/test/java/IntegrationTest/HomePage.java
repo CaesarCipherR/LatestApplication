@@ -32,6 +32,8 @@ public class HomePage extends Base {
 		System.out.println("This is second guy commit");
 		System.out.println("Adding few apps");
 		System.out.println("Adding another test");
+		System.out.println("New tests");
+		System.out.println("Adding another test");
 	}
 	
 	@AfterTest
