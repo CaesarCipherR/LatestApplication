@@ -37,6 +37,7 @@ public class HomePage extends Base {
 		System.out.println("Adding new test");
 		System.out.println("New tests developed");
 		System.out.println("Adding another new test");
+		System.out.println("Master branch");
 	}
 	
 	@AfterTest
